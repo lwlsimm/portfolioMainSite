@@ -1,6 +1,3 @@
-# portfolioMainSite
-Main landing page for my public portfolio
-
  # My Portfolio Main Page
 
   ## Purpose
