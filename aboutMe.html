@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;600&display=swap" rel="stylesheet">  
-  <title>Lee Simmons || About Me</title>
+  <title>Lee Simmons</title>
 </head>
-<body>
+<body class="aboutMePage">
   <header>
-    <h1>Lee Simmons</h1>
+    <div id="textHolder">
+      <h1>Lee Simmons</h1>
+    </div>
     <div id="iconHolder">
       <a href="mailto: lwlsimmons@gmail.com"><img src="img/arroba.png" alt="email contact"></a>
       <a href="tel: 00-700000000"><img src="img/phone-call-2.png" alt="phone contact"></a>
@@ -22,12 +25,12 @@
 
 <main>
   <nav>  
-      <ul>
-        <a href="index.html"><li>Home</li></a>
-        <a href="aboutMe.html"><li class="currentPage">About Me</li></a>
-        <a href="myPortfolio.html"><li>My Portfolio</li></a>
-        <a href="contact.html"><li>Contact</li></a>
-      </ul>
+    <ul>
+      <a href="index.html"><li >Home</li></a>
+      <a href="aboutMe.html"><li class="currentPage">About Me</li></a>
+      <a href="myPortfolio.html"><li >My Portfolio</li></a>
+      <a id="contactLink" href="contact.html"><li>Contact</li></a>
+    </ul>
   </nav>
 <!-- Page Content-->
 <section class="sectionRow">
@@ -43,26 +46,9 @@
 </main>
 
 <!-- Arrow -->
-<button onclick="moveToNextPage()"><img id="downArrow" src="img/down-arrow.png" alt="down-arrow">
+<script src="script.js"></script>
+<button  id="downArrow" onclick="moveToNextPage()"><img src="img/down-arrow.png" alt="down-arrow">
 </button>
-
-<script>
-  var path = window.location.pathname;
-  var page = path.split("/").pop();
-  function moveToNextPage () {
-    switch(page) {
-      case 'index.html':
-        document.location.href = "aboutMe.html";
-        break;
-      case 'aboutMe.html':
-        document.location.href = "myPortfolio.html";
-        break;
-      case 'myPortfolio.html':
-        document.location.href = "contact.html";
-        break;
-    }
-  };
-</script>
 
 
 </body>

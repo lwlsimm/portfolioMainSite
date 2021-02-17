@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;600&display=swap" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="projectCardsStyles.css">
-  <title>Lee Simmons || Conact</title>
-
+  <title>Lee Simmons</title>
 </head>
-<body>
+<body class="contactPage">
   <header>
-    <h1>Lee Simmons</h1>
+    <div id="textHolder">
+      <h1>Lee Simmons</h1>
+    </div>
     <div id="iconHolder">
       <a href="mailto: lwlsimmons@gmail.com"><img src="img/arroba.png" alt="email contact"></a>
-      <a href="tel: 00-700000000"><img id="myPhone" src="img/phone-call-2.png" alt="phone contact"></a>
+      <a href="tel: 00-700000000"><img src="img/phone-call-2.png" alt="phone contact"></a>
       <a href="https://uk.linkedin.com/" target="_blank"> <img src="img/linkedin.png" alt="linkedin icon"></a>
     </div>
 </header>
@@ -26,10 +26,10 @@
 <main>
   <nav>  
     <ul>
-      <a href="index.html"><li>Home</li></a>
+      <a href="index.html"><li class="currentPage">Home</li></a>
       <a href="aboutMe.html"><li >About Me</li></a>
-      <a href="myPortfolio.html"><li>My Portfolio</li></a>
-      <a href="contact.html"><li class="currentPage">Contact</li></a>
+      <a href="myPortfolio.html"><li >My Portfolio</li></a>
+      <a id="contactLink" href="contact.html"><li>Contact</li></a>
     </ul>
   </nav>
 <!-- Page Content-->
