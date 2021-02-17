@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --hoverGray: rgba(100, 100, 100, 0.7);
+  --hoverAmber: rgba(255, 191, 0, 0.7);
+  --currentPageCol: rgba(255, 143, 0, 0.7);
+  --amber: rgba(255, 191, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Brygada 1918', serif;
+}
+
+/* Header Section */
+
+header {
+  height: 10vh;
+  font-family: 'Brygada 1918', serif;
+  background: white;
+  text-align: center; 
+  display: grid;
+  grid-template-columns: 1fr 5fr 25vw;
+  border-bottom: black 1px solid;
+}
+
+h1 {
+  font-size: 35px;
+  color: black !;
+  font-weight: 800;
+  padding-top: 28px;
+  grid-column: 2 / span 1;
+}
+
+#iconHolder {
+  grid-column: 3 / span 1;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#iconHolder img {
+  width: 35px;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+#iconHolder img:hover {
+  background: var(--hoverAmber);
+  cursor: pointer;
+} 
+
+/* Home Page */
+
+main {
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 25vw;
+}
+
+/* Column 3 - Image */
+main img {
+  height: 80vh;
+  grid-column: 3 / span 1;
+  filter: grayscale(0);
+  border-radius: 20px 20px;
+}
+main img:hover {
+  filter: grayscale(1);
+}
+
+#imageHolder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ /* Column 1 - The Nav Bar */
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  grid-column: 1 / span 1;
+  z-index: 100;
+}
+
+nav:hover {
+  background: var(--hoverGray);
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+}
+nav ul li {
+  padding: 35px 0;
+  margin: 40px 0;
+  width: 200px;
+  border: white solid 2px;
+  background: rgba(000,000,000,0.7);
+  border-radius: 20px 20px;
+  font-family: 'Brygada 1918', serif;
+  color: white;
+  font-size: 20px;
+}
+
+nav ul li:hover {
+  background: var(--hoverAmber);
+  color: black;
+}
+
+.currentPage {
+  background: var(--currentPageCol);
+  color: black;
+}
+
+/* Column 2 - Text */
+
+#textHolder {
+  grid-column: 2 / span 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainTextBox {
+  text-align: center;
+}
+
+#mainTextBox h2{
+  font-size: 30px;
+  padding: 30px;
+}
+
+#mainTextBox ul li {
+  padding: 25px 30px;
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+#mainTextBox ul li:hover {
+  background: var(--hoverAmber);
+  cursor: pointer;
+}
+
+/* Down Arrow */
+
+#downArrow {
+  position: absolute;
+  bottom: 30px;
+  margin-left: 42%;
+  padding: 10px;
+}
+#downArrow-RowPage {
+  position: absolute;
+  bottom: 30px;
+  margin-left: 2.5%;
+  padding: 10px;
+  z-index: 500;
+}
+#downArrow:hover, #downArrow-RowPage:hover {
+  background: var(--hoverAmber);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* SECTION CONTAINER - This is the main container for all pages except home.  It spans columns 2 and 3 of the main grid */
+.sectionRow {
+  grid-column: 2 / span 2;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  
+}
+
+/* About Me Page */
+#aboutMePic {
+  max-width: 100%;
+  height: 100%;
+  background: url('img/home.JPG') center center/cover;
+  
+  grid-row: 1 / span 1;
+  align-self: center;
+}
+
+#aboutMePic:hover {
+  filter: grayscale(1);
+}
+
+#aboutMeText {
+  padding: 30px 45px;
+  text-align: justify;
+  grid-row: 2 / span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#aboutMeText h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  max-width: 900px;
+}
+
+#aboutMeText p {
+  max-width: 900px;
+  margin-bottom: 7.5px;
+  text-align: justify;
+}
+
+/* My Projects */
+#cardHolder {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  grid-column: 2 / span 2;
+}
+
+.projectCard {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px 20px;
+  padding: 10px;
+  box-shadow: var(--hoverGray) 5px 7.5px;
+  font-family: 'Special Elite', cursive;
+  border: black 0.5px solid;
+}
+
+
+.projectCard h4 {
+  background: var(--hoverGray);
+  color: var(--amber);
+  margin-top: 50px;
+  padding: 25px 5px 0 5px;
+  text-align: center;
+  font-size: 20px;
+}
+.projectCard p {
+  background: var(--hoverGray);
+  padding: 25px 5px;
+  text-align: justify;
+  font-size: 18px;
+  color: white;
+}
+
+.projectCard p span {
+  color: var(--amber);
+}
+
+/* Contact */
+#contact {
+display: flex;
+width: 100%;
+height: 100%;
+padding: 40px;
+grid-column: 2 / span 2;  
+flex-direction: column;
+margin: auto auto;
+}
+
+.contactPgImg {
+  height: auto;
+  width: 120px;
+  padding: 60px;
+}
+
+.contactGroup:hover {
+  background: var(--hoverAmber);
+}
+.contactGroup {
+  min-width: 300px;
+  max-width: 1000px;
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px 20px;
+}
+
+

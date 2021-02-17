@@ -1,0 +1,11 @@
+/* This sheet contains styling only for individual project cards.  For class stylings, see style.css*/
+
+/* Project: 'Example Project Name' */
+
+
+#exampleProj {
+  background: url('img/projectCards/exampleProject.png') center center/cover;
+}
+#exampleProj:hover {
+  background: url('img/projectCards/exampleProj1.png') center center/cover;
+}
