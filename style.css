@@ -19,7 +19,6 @@ body {
   min-height: 650px;
   font-family: "Brygada 1918", serif;
   background: url('img/backgroundSplash.png') left/cover no-repeat;
-  background-position: -70px 140px;
 }
 
 a {
