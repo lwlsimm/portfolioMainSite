@@ -3,9 +3,13 @@
 /* Project: 'Example Project Name' */
 
 
-#exampleProj {
-  background: url('img/projectCards/exampleProject.png') center center/cover;
+#card1 .cardPicHolder {
+  background: url('img/cards/card1.png') center center/cover;
+  filter: grayscale(50%);
 }
-#exampleProj:hover {
-  background: url('img/projectCards/exampleProj1.png') center center/cover;
+
+#card2 .cardPicHolder {
+  background: url('img/cards/card2.png') center center/cover;
+  filter: sepia(50%) ;
 }
+
