@@ -4,12 +4,18 @@
 
 
 #card1 .cardPicHolder {
-  background: url('img/cards/card1.png') center center/cover;
+  background: url('img/cards/edwardAndCo.png') center center/cover;
   filter: grayscale(50%);
 }
 
 #card2 .cardPicHolder {
-  background: url('img/cards/card2.png') center center/cover;
+  background: url('img/cards/myreadinghub.png') center center/cover;
   filter: sepia(50%) ;
 }
 
+.siteLink {
+  margin: 10px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
