@@ -202,7 +202,7 @@ nav ul li:hover {
    background-color: white;
    display: grid;
    align-items: center;
-   grid-template: repeat(3, 1fr) / 1fr 2fr;
+   grid-template: repeat(2, 1fr) / 1fr 2fr;
  }
 
  .bizCardIcon {
@@ -214,9 +214,9 @@ nav ul li:hover {
  }
 
   #bizCardEmail {grid-area: 1 / 1;}
-  #bizCardPhone {grid-area: 2 / 1;}
-  #bizCardLI {grid-area: 3 / 1;}
+  /* #bizCardPhone {grid-area: 2 / 1;} */
+  #bizCardLI {grid-area: 2 / 1;}
 
   #bizCardEmailText {grid-area: 1 / 2;}
-  #bizCardPhoneText {grid-area: 2 / 2;}
-  #bizCardLIText {grid-area: 3 / 2;}
+  /* #bizCardPhoneText {grid-area: 2 / 2;} */
+  #bizCardLIText {grid-area: 2 / 2;}
